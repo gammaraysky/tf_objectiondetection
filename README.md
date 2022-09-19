@@ -1,9 +1,9 @@
 # Plant Disease Detection of 'PlantDoc' Dataset, using Tensorflow Object Detection API, SSD MobileNetV2 320x320
 - dataset from https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset
   - original Pascal VOC annotations cleaned up using `./utils/clean-pascalvoc-annotations.ipynb`
-- this notebook is referenced from https://github.com/nicknochnack/TFODCourse
+- this notebook is referenced from https://github.com/nicknochnack/TFODCourse Nick's tutorial on webcam gestures
 - work-in-progress. saved model deployed on Docker, but I haven't built a REST client yet.
-- mAP scores as follows after 12000 steps, have not tuned anything yet/tried other models e.g. RCNN:
+- mAP scores as follows after 12000 steps, have not tuned anything yet/tried other models e.g. RCNN/ENet:
 
 
        Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.257
