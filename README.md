@@ -9,7 +9,7 @@
 - based on model performance so far, will try again with RCNN to see if classification performance is better. but it looks like we need a lot more data, and better quality dataset in general. (I should also try and find other projects using this dataset and look at their results)
 
 #### Train Loss Metrics (after 10000 steps):
-<img src='tensorboard_train_10000.png'>
+<img src='tensorboard_train_10000.png'/>
 
 #### Eval Metrics:
     Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.098
