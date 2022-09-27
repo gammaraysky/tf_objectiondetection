@@ -1,15 +1,17 @@
 # Plant Disease Detection of 'PlantDoc' Dataset, using Tensorflow Object Detection API, ResNet101 FPN 640x640
+- WORK-IN-PROGRESS
 - dataset from https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset
   - original Pascal VOC annotations cleaned up using `./utils/clean-pascalvoc-annotations.ipynb`
 - this notebook is referenced from https://github.com/nicknochnack/TFODCourse Nick's tutorial on webcam hand gestures detection
 - started with SSD MobileNet FPNLite 320x320 but results weren't good. Attempted ResNet101 based on performance/speed chart here: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
 - added image augmentation preprocessing steps to train pipeline
-- work-in-progress. saved model deployed on Docker, but I haven't built a REST client yet.
+- saved model deployed on Docker, but I haven't built a REST client yet.
+- based on model performance so far, will try again with RCNN to see if classification performance is better. but it looks like we need a lot more data, and better quality dataset in general. (I should also try and find other projects using this dataset and look at their results)
 
-#### Train Loss Metrics:
+#### Train Loss Metrics (after 10000 steps):
 <img src='tensorboard_train_10000.png'>
 
-#### Current Eval Metrics:
+#### Eval Metrics:
     Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.098
     Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.136
     Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.112
