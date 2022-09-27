@@ -2,5 +2,6 @@
 - dataset from https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset
   - original Pascal VOC annotations cleaned up using `./utils/clean-pascalvoc-annotations.ipynb`
 - this notebook is referenced from https://github.com/nicknochnack/TFODCourse Nick's tutorial on webcam gestures
+- added image augmentation preprocessing steps to train pipeline
 - work-in-progress. saved model deployed on Docker, but I haven't built a REST client yet.
 
