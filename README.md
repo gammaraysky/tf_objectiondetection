@@ -2,6 +2,7 @@
 - dataset from https://github.com/pratikkayal/PlantDoc-Object-Detection-Dataset
   - original Pascal VOC annotations cleaned up using `./utils/clean-pascalvoc-annotations.ipynb`
 - this notebook is referenced from https://github.com/nicknochnack/TFODCourse Nick's tutorial on webcam hand gestures detection
+- started with SSD MobileNet FPNLite 320x320 but results weren't good. Attempted ResNet101 based on performance/speed chart here: https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md
 - added image augmentation preprocessing steps to train pipeline
 - work-in-progress. saved model deployed on Docker, but I haven't built a REST client yet.
 
